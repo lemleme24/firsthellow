@@ -29,6 +29,9 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+					<classifier>mule-application</classifier>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -42,10 +45,10 @@
 		</dependency>
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
-			
 			<version>1.2.2</version>
 			<classifier>mule-plugin</classifier>
-		<artifactId>mule-sockets-connector</artifactId></dependency>
+			<artifactId>mule-sockets-connector</artifactId>
+		</dependency>
 	</dependencies>
 
 	<repositories>
